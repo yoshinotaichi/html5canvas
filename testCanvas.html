@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>testCanvas</title>
+	<style type="text/css">
+		canvas {
+			border: 1px solid back;
+		}
+	</style>
+</head>
+<body>
+	<h1>testCanvas</h1>
+	<hr>
+
+	<canvas id='canvas' width="500" height="500">canvas not available</canvas>
+
+
+
+
+	<script type="text/javascript">
+		var canvas = document.getElementById('canvas');
+		var ctx = canvas.getContext('2d');
+
+		ctx.fillStyle = "rgb(200, 0, 0)";
+		ctx.fillRect(100, 100, 100, 100);
+	</script>
+</body>
+</html>
